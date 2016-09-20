@@ -1,9 +1,13 @@
-server.port: 8761
+server:
+  port: 8761
 
 spring:
-    application.name: Synapsis-discovery
+    application:
+      name: Synapsis-discovery
 
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://52.57.12.223:8761/eureka
+      defaultZone: http://127.0.0.1:8761/eureka
+  instance:
+    preferIpAddress: true
